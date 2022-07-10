@@ -22,7 +22,7 @@ import Axios from 'axios';
         const body = this.state.number;
         const notify = () => toast("Mission Complete");
 
-        Axios.get("/?expr=" + body)
+        Axios.get("/v4/?expr=" + body)
         .then((response) => {
             this.setState({number:response.data}) 
             notify()
