@@ -22,7 +22,7 @@ import Axios from 'axios';
         const body = this.state.number;
         const notify = () => toast("Mission Complete");
 
-        Axios.get("http://api.mathjs.org/v4/?expr=" + body)
+        Axios.get("https://api.mathjs.org/v4/?expr=" + body)
         .then((response) => {
             this.setState({number:response.data}) 
             notify()
