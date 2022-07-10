@@ -24,6 +24,7 @@ import Axios from 'axios';
 
         Axios.get("/v4/?expr=" + body , {
           mode: 'no-cors',
+        }
          )
         .then((response) => {
             this.setState({number:response.data}) 
